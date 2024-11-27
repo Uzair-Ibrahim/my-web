@@ -2,35 +2,41 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Uzair Ibrahim - CV</title>
     <style>
     body {
         font-family: 'Arial', sans-serif;
-        background-color: whitesmoke;
-        color: black;
+        background: linear-gradient(135deg, #f3f4f7, #ffffff);
+        color: #333;
+        margin: 0;
+        padding: 0;
     }
-        header {
-            background-color: blue;
-            color:white;
-            padding: 40px 0;
-            text-align: center;
-            box-shadow: 0 4px 10px gray;
-        }
+    header {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        animation: fadeInDown 1s;
+    }
     header h1 {
-    font-size: 3em;
-    margin: 0;
-  }
+        font-size: 3em;
+        margin: 0;
+        letter-spacing: 2px;
+    }
     header p {
         font-size: 1.2em;
+        margin: 10px 0;
     }
     .container {
         max-width: 80%;
-        margin: 20px auto;
+        margin: 30px auto;
         padding: 20px;
-        background-color:whitesmoke;
+        background-color: white;
         border-radius: 10px;
-        box-shadow: 0 4px 20px grey;
-  }
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 1s;
+    }
     .profile {
         display: flex;
         align-items: center;
@@ -41,64 +47,115 @@
         border-radius: 50%;
         width: 150px;
         height: 150px;
-       margin-right: 20px;
-        border: 3px solid blue;
-  }
+        margin-right: 20px;
+        border: 3px solid #007bff;
+        animation: bounceIn 1.2s;
+    }
     .profile h2 {
-        color:black ;
-     font-size: 2em;
+        color: #0056b3;
+        font-size: 2.2em;
         margin: 0;
- }
+    }
     h2 {
-        color: black;
+        color: #333;
         font-size: 1.8em;
-      margin-bottom: 10px;
-        border-bottom: 3px solid blue;
-      padding-bottom: 5px;
-       }
-    h3 {
-        color: blue;
-          font-size: 1.4em;
         margin-bottom: 10px;
+        border-bottom: 3px solid #007bff;
         padding-bottom: 5px;
-      }
+    }
+    h3 {
+        color: #0056b3;
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
     .section {
-      margin-bottom: 30px;
+        margin-bottom: 30px;
     }
     .section p {
-      font-size: 1.1em;
-      margin: 10px ;
-        } 
-    footer {
-        background-color: blue;
-        color:white;
-        text-align:center;
-        padding:20px 0;
-        position:relative;
-        width: 100%;
-        box-shadow: 4px 10px gray;
+        font-size: 1.1em;
+        margin: 10px 0;
     }
     .skills-container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
     .skill {
-        background-color: blue;
+        background: #007bff;
         color: white;
-        padding: 10px;
-        margin: 10px;
+        padding: 10px 20px;
         border-radius: 25px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         text-align: center;
-        flex: 1 1 100px;
-        max-width: 100px;
+        font-weight: bold;
+        font-size: 1em;
+        animation: fadeIn 1s;
+        transition: transform 0.3s ease-in-out;
+    }
+    .skill:hover {
+        transform: scale(1.1);
+        background: #0056b3;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
     a {
-        color:brown;
+        color: #0056b3;
         text-decoration: none;
+        font-weight: bold;
     }
     a:hover {
         text-decoration: underline;
+    }
+    footer {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        width: 100%;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        animation: fadeInUp 1s;
+    }
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes bounceIn {
+        0% {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
     @media screen and (max-width: 780px) {
         header h1 {
@@ -125,29 +182,29 @@
     <div class="profile">
         <img src="wse.PNG" alt="Profile Image">
         <div>
-        <h2>About Me</h2>
-          <p>I am Uzair Ibrahim from Mehrabpur, currently studying BSCS at FAST NUCES, Karachi.</p>
+            <h2>About Me</h2>
+            <p>I am Uzair Ibrahim from Mehrabpur, currently studying BSCS at FAST NUCES, Karachi.</p>
         </div>
     </div>
     <div class="section">
-     <h2>Education</h2>
-       <p><b>Studying at:</b> FAST NUCES, Karachi</p>
-         <h3>Additional Qualification:</h3>
-      <p>Microsoft Office and Desktop Publishing - 2 Years</p>
+        <h2>Education</h2>
+        <p><b>Studying at:</b> FAST NUCES, Karachi</p>
+        <h3>Additional Qualification:</h3>
+        <p>Microsoft Office and Desktop Publishing - 2 Years</p>
     </div>
     <div class="section">
-         <h2>Experience</h2>
-       <p><b>Accountant at:</b> Mehboob Autos and Spare Parts</p>
-         <p><b>Duration:</b> 6 Months</p>
+        <h2>Experience</h2>
+        <p><b>Accountant at:</b> Mehboob Autos and Spare Parts</p>
+        <p><b>Duration:</b> 6 Months</p>
     </div>
     <div class="section">
         <h2>Skills</h2>
         <div class="skills-container">
             <div class="skill">MS Office</div>
-          <div class="skill">Desktop Publishing</div>
-             <div class="skill">Typing</div>
-         <div class="skill">C</div>
-        <div class="skill">HTML</div>
+            <div class="skill">Desktop Publishing</div>
+            <div class="skill">Typing</div>
+            <div class="skill">C</div>
+            <div class="skill">HTML</div>
             <div class="skill">CSS</div>
         </div>
     </div>
