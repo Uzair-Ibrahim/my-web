@@ -10,6 +10,7 @@
         color: #333;
         margin: 0;
         padding: 0;
+        animation: fadeIn 2s;
     }
     header {
         background: linear-gradient(135deg, #007bff, #0056b3);
@@ -17,16 +18,18 @@
         padding: 40px 20px;
         text-align: center;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        animation: fadeInDown 1s;
+        animation: fadeInDown 2s;
     }
     header h1 {
         font-size: 3em;
         margin: 0;
         letter-spacing: 2px;
+        animation: fadeIn 2.5s;
     }
     header p {
         font-size: 1.2em;
         margin: 10px 0;
+        animation: fadeIn 3s;
     }
     .container {
         max-width: 80%;
@@ -35,13 +38,33 @@
         background-color: white;
         border-radius: 10px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        animation: fadeInUp 1s;
+        animation: fadeInUp 2s;
+    }
+    .buttons-container {
+        text-align: center;
+        margin-bottom: 30px;
+        animation: fadeIn 2s;
+    }
+    .btn {
+        background: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        margin: 10px;
+        cursor: pointer;
+        transition: background 0.6s ease-in-out;
+    }
+    .btn:hover {
+        background: #0056b3;
     }
     .profile {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 30px;
+        animation: fadeInLeft 2s;
     }
     .profile img {
         border-radius: 50%;
@@ -49,12 +72,13 @@
         height: 150px;
         margin-right: 20px;
         border: 3px solid #007bff;
-        animation: bounceIn 1.2s;
+        animation: bounceIn 2.2s;
     }
     .profile h2 {
         color: #0056b3;
         font-size: 2.2em;
         margin: 0;
+        animation: fadeInRight 2s;
     }
     h2 {
         color: #333;
@@ -62,24 +86,29 @@
         margin-bottom: 10px;
         border-bottom: 3px solid #007bff;
         padding-bottom: 5px;
+        animation: fadeInDown 2s;
     }
     h3 {
         color: #0056b3;
         font-size: 1.4em;
         margin-bottom: 10px;
+        animation: fadeInDown 2.5s;
     }
     .section {
         margin-bottom: 30px;
+        animation: fadeInLeft 3s;
     }
     .section p {
         font-size: 1.1em;
         margin: 10px 0;
+        animation: fadeInUp 3s;
     }
     .skills-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
+        animation: fadeInUp 3s;
     }
     .skill {
         background: #007bff;
@@ -91,7 +120,7 @@
         font-weight: bold;
         font-size: 1em;
         animation: fadeIn 1s;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.6s ease-in-out;
     }
     .skill:hover {
         transform: scale(1.1);
@@ -102,6 +131,7 @@
         color: #0056b3;
         text-decoration: none;
         font-weight: bold;
+        animation: fadeIn 3s;
     }
     a:hover {
         text-decoration: underline;
@@ -114,7 +144,7 @@
         position: relative;
         width: 100%;
         box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
-        animation: fadeInUp 1s;
+        animation: fadeInUp 2.5s;
     }
     @keyframes fadeInDown {
         from {
@@ -134,6 +164,26 @@
         to {
             opacity: 1;
             transform: translateY(0);
+        }
+    }
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
         }
     }
     @keyframes bounceIn {
@@ -179,25 +229,28 @@
     <p>LinkedIn: <a href="https://linkedin.com/in/uzair-ibrahim-17ba56283/" target="_blank">LinkedIn Profile</a></p>
 </header>
 <div class="container">
-    <div class="profile">
+    <div class="buttons-container">
+        <button class="btn" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">About</button>
+        <button class="btn" onclick="document.getElementById('experience').scrollIntoView({ behavior: 'smooth' })">Experience</button>
+        <button class="btn" onclick="document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })">Skills</button>
+    </div>
+    <div id="about" class="profile">
         <img src="wse.PNG" alt="Profile Image">
         <div>
             <h2>About Me</h2>
             <p>I am Uzair Ibrahim from Mehrabpur, currently studying BSCS at FAST NUCES, Karachi.</p>
         </div>
     </div>
-    <div class="section">
+    <div id="experience" class="section">
         <h2>Education</h2>
         <p><b>Studying at:</b> FAST NUCES, Karachi</p>
         <h3>Additional Qualification:</h3>
         <p>Microsoft Office and Desktop Publishing - 2 Years</p>
-    </div>
-    <div class="section">
         <h2>Experience</h2>
         <p><b>Accountant at:</b> Mehboob Autos and Spare Parts</p>
         <p><b>Duration:</b> 6 Months</p>
     </div>
-    <div class="section">
+    <div id="skills" class="section">
         <h2>Skills</h2>
         <div class="skills-container">
             <div class="skill">MS Office</div>
