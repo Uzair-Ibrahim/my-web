@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: whitesmoke;
+        color: black;
+    }
+        header {
+            background-color: blue;
+            color:white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px gray;
+        }
+    header h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+    header p {
+        font-size: 1.2em;
+    }
+    .container {
+        max-width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color:whitesmoke;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px grey;
+  }
+    .profile {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .profile img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+       margin-right: 20px;
+        border: 3px solid blue;
+  }
+    .profile h2 {
+        color:black ;
+     font-size: 2em;
+        margin: 0;
+ }
+    h2 {
+        color: black;
+        font-size: 1.8em;
+      margin-bottom: 10px;
+        border-bottom: 3px solid blue;
+      padding-bottom: 5px;
+       }
+    h3 {
+        color: blue;
+          font-size: 1.4em;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+      }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section p {
+      font-size: 1.1em;
+      margin: 10px ;
+        } 
+    footer {
+        background-color: blue;
+        color:white;
+        text-align:center;
+        padding:20px 0;
+        position:relative;
+        width: 100%;
+        box-shadow: 4px 10px gray;
+    }
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skill {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 25px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        flex: 1 1 100px;
+        max-width: 100px;
+    }
+    a {
+        color:brown;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    @media screen and (max-width: 780px) {
+        header h1 {
+            font-size: 2.5em;
+        }
+        .profile {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .profile img {
+            margin-bottom: 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Uzair Ibrahim</h1>
+    <p>Email: <a href="mailto:uzairibrahim311@gmail.com">uzairibrahim311@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/uzair-ibrahim-17ba56283/" target="_blank">LinkedIn Profile</a></p>
+</header>
+<div class="container">
+    <div class="profile">
+        <img src="wse.PNG" alt="Profile Image">
+        <div>
+        <h2>About Me</h2>
+          <p>I am Uzair Ibrahim from Mehrabpur, currently studying BSCS at FAST NUCES, Karachi.</p>
+        </div>
+    </div>
+    <div class="section">
+     <h2>Education</h2>
+       <p><b>Studying at:</b> FAST NUCES, Karachi</p>
+         <h3>Additional Qualification:</h3>
+      <p>Microsoft Office and Desktop Publishing - 2 Years</p>
+    </div>
+    <div class="section">
+         <h2>Experience</h2>
+       <p><b>Accountant at:</b> Mehboob Autos and Spare Parts</p>
+         <p><b>Duration:</b> 6 Months</p>
+    </div>
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">Microsoft Office</div>
+          <div class="skill">Desktop Publishing</div>
+             <div class="skill">Typing</div>
+         <div class="skill">C</div>
+        <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Uzair Ibrahim</p>
+</footer>
+</body>
+</html>
