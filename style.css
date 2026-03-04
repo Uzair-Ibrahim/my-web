@@ -1,14 +1,17 @@
-body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #f3f4f7, #ffffff);
-            color: #333;
+* {
+            font-family: 'Ubuntu', sans-serif;
+        }
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background: linear-gradient(135deg, #1e0b53bb, #2c034c);
+            color: #cbb4c4be;
             margin: 0;
             padding: 0;
             animation: fadeIn 2s;
         }
         header {
-            background: linear-gradient(135deg, #007bff, #0056b3);
-            color: white;
+            background: linear-gradient(135deg, #070707, #0b0938);
+            color: #cbb4c4be;
             padding: 40px 20px;
             text-align: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -29,9 +32,9 @@ body {
             max-width: 80%;
             margin: 30px auto;
             padding: 20px;
-            background-color: white;
+            background-color: rgb(23, 15, 54);
             border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 4px 20px rgba(251, 249, 249, 0.1);
             animation: fadeInUp 2s;
         }
         .buttons-container {
@@ -40,8 +43,8 @@ body {
             animation: fadeIn 2s;
         }
         .btn {
-            background: #007bff;
-            color: white;
+            background: #560d46;
+            color: #cbb4c4be;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
@@ -51,7 +54,7 @@ body {
             transition: background 0.6s ease-in-out;
         }
         .btn:hover {
-            background: #0056b3;
+            background: #560d46;
         }
         .profile {
             display: flex;
@@ -65,25 +68,25 @@ body {
             width: 150px;
             height: 150px;
             margin-right: 20px;
-            border: 3px solid #007bff;
+            /* border: 3px solid #007bff; */
+            box-shadow: 0 2px 4px rgba(125, 92, 235, 0.384);
             animation: bounceIn 2.2s;
         }
         .profile h2 {
-            color: #0056b3;
-            font-size: 2.2em;
-            margin: 0;
+            color: #560d46;
+            /* margin: 0; */
             animation: fadeInRight 2s;
         }
         h2 {
-            color: #333;
+            color:  #560d46;
             font-size: 1.8em;
             margin-bottom: 10px;
-            border-bottom: 3px solid #007bff;
+            border-bottom: 3px solid #560d46;
             padding-bottom: 5px;
             animation: fadeInDown 2s;
         }
         h3 {
-            color: #0056b3;
+            color: #560d46;
             font-size: 1.4em;
             margin-bottom: 10px;
             animation: fadeInDown 2.5s;
@@ -105,8 +108,8 @@ body {
             animation: fadeInUp 3s;
         }
         .skill {
-            background: #007bff;
-            color: white;
+            background: #560d46;
+            color: #cbb4c4be;
             padding: 10px 20px;
             border-radius: 25px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -118,11 +121,11 @@ body {
         }
         .skill:hover {
             transform: scale(1.1);
-            background: #0056b3;
+            background: #9e2885;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
         a {
-            color: #0056b3;
+            color: #560d46;
             text-decoration: none;
             font-weight: bold;
             animation: fadeIn 3s;
@@ -131,8 +134,8 @@ body {
             text-decoration: underline;
         }
         footer {
-            background: linear-gradient(135deg, #007bff, #0056b3);
-            color: white;
+            background: linear-gradient(135deg, #070707, #0b0938);
+            color: #cbb4c4be;
             text-align: center;
             padding: 20px 0;
             position: relative;
