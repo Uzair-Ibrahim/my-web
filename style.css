@@ -1,0 +1,233 @@
+body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f3f4f7, #ffffff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s;
+        }
+        header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 2s;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 2px;
+            animation: fadeIn 2.5s;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            animation: fadeIn 3s;
+        }
+        .container {
+            max-width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 2s;
+        }
+        .buttons-container {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 2s;
+        }
+        .btn {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin: 10px;
+            cursor: pointer;
+            transition: background 0.6s ease-in-out;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            animation: fadeInLeft 2s;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border: 3px solid #007bff;
+            animation: bounceIn 2.2s;
+        }
+        .profile h2 {
+            color: #0056b3;
+            font-size: 2.2em;
+            margin: 0;
+            animation: fadeInRight 2s;
+        }
+        h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 5px;
+            animation: fadeInDown 2s;
+        }
+        h3 {
+            color: #0056b3;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            animation: fadeInDown 2.5s;
+        }
+        .section {
+            margin-bottom: 30px;
+            animation: fadeInLeft 3s;
+        }
+        .section p {
+            font-size: 1.1em;
+            margin: 10px 0;
+            animation: fadeInUp 3s;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            animation: fadeInUp 3s;
+        }
+        .skill {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-weight: bold;
+            font-size: 1em;
+            animation: fadeIn 1s;
+            transition: transform 0.6s ease-in-out;
+        }
+        .skill:hover {
+            transform: scale(1.1);
+            background: #0056b3;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            animation: fadeIn 3s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 2.5s;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @media screen and (max-width: 780px) {
+        header h1 {
+            font-size: 2em;
+        }
+        .profile {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .profile img {
+            margin-bottom: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        .btn {
+            display: block;
+            margin: 10px auto;
+            font-size: 0.9em;
+            width: 90%;
+        }
+        h2 {
+            font-size: 1.4em;
+        }
+        .skills-container {
+            flex-direction: column;
+        }
+        .container {
+            padding: 15px;
+        }
+    }
