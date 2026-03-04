@@ -3,7 +3,7 @@
         }
         body {
             font-family: 'Ubuntu', sans-serif;
-            background: linear-gradient(135deg, #1e0b53bb, #2c034c);
+            background: linear-gradient(135deg, #1e0b53cd, #2c034c);
             color: #cbb4c4be;
             margin: 0;
             padding: 0;
@@ -54,7 +54,7 @@
             transition: background 0.6s ease-in-out;
         }
         .btn:hover {
-            background: #560d46;
+            background: #9e2885;
         }
         .profile {
             display: flex;
