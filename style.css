@@ -166,7 +166,7 @@
             /* border: 3px solid #560d46; */
             animation: bounceIn 2.5s;
         }
-        .contact-info {
+        /* .contact-info {
             background: linear-gradient(135deg, #070707, #0b0938);
             color: #cbb4c4be;
             padding: 20px;
@@ -185,7 +185,7 @@
         .contact-info i {
             color: #560d46;
             font-size: 1.2em;
-        }
+        } */
         .education-item {
             background: rgba(86, 13, 70, 0.1);
             /* border-left: 4px solid #560d46; */
