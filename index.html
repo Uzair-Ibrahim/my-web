@@ -9,6 +9,9 @@
 </head>
 <body>
 <header>
+    <div class="profile-pic-container">
+        <img src="wse.PNG" alt="Profile Image" class="profile-pic">
+    </div>
     <h1>Uzair Ibrahim</h1>
     <div class="social-icons">
         <a href="mailto:uzairibrahim311@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
@@ -16,37 +19,115 @@
         <a href="https://github.com/Uzair-Ibrahim" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
     </div>
 </header>
+<div class="contact-info">
+    <p><i class="fas fa-phone"></i> +92 321 0333029</p>
+    <p><i class="fas fa-envelope"></i> uzairkamboh311@gmail.com</p>
+    <p><i class="fas fa-map-marker-alt"></i> FAST NUCES Main Campus, Karachi</p>
+</div>
+
 <div class="container">
     <div class="buttons-container">
-        <button class="btn" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">About</button>
-        <button class="btn" onclick="document.getElementById('experience').scrollIntoView({ behavior: 'smooth' })">Experience</button>
+        <button class="btn" onclick="document.getElementById('education').scrollIntoView({ behavior: 'smooth' })">Education</button>
         <button class="btn" onclick="document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })">Skills</button>
+        <button class="btn" onclick="document.getElementById('experience').scrollIntoView({ behavior: 'smooth' })">Experience</button>
+        <button class="btn" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">Projects</button>
     </div>
-    <div id="about" class="profile">
-        <img src="wse.PNG" alt="Profile Image">
-        <div>
-            <h2>About Me</h2>
-            <p>I am Uzair Ibrahim from Mehrabpur, currently studying BSCS at FAST NUCES, Karachi.</p>
+
+    <div id="education" class="section">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p><b>Institution:</b> FAST NUCES Main Campus, Karachi</p>
+            <p><b>Duration:</b> 2024 – Present</p>
+        </div>
+        <div class="education-item">
+            <h3>Intermediate (Pre-Engineering)</h3>
+            <p><b>Institution:</b> Government Boys College Mehrabpur</p>
+            <p><b>Duration:</b> 2022 – 2024</p>
         </div>
     </div>
-    <div id="experience" class="section">
-        <h2>Education</h2>
-        <p><b>Studying at:</b> FAST NUCES, Karachi</p>
-        <h3>Additional Qualification:</h3>
-        <p>Microsoft Office and Desktop Publishing - 2 Years</p>
-        <h2>Experience</h2>
-        <p><b>Accountant at:</b> Mehboob Autos and Spare Parts</p>
-        <p><b>Duration:</b> 6 Months</p>
-    </div>
+
     <div id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">MS Office</div>
-            <div class="skill">Desktop Publishing</div>
-            <div class="skill">Typing</div>
-            <div class="skill">C</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
+        <h2>Technical Skills</h2>
+        <div class="skills-category">
+            <h3>Programming Languages</h3>
+            <div class="skills-container">
+                <div class="skill">C</div>
+                <div class="skill">C++</div>
+                <div class="skill">Python</div>
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+            </div>
+        </div>
+        <div class="skills-category">
+            <h3>Frameworks & Tools</h3>
+            <div class="skills-container">
+                <div class="skill">Django</div>
+                <div class="skill">FastAPI</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Teaching Assistant - Multivariable Calculus</h3>
+            <p><b>Institution:</b> FAST NUCES Main Campus, Karachi</p>
+            <p><b>Duration:</b> January 2026 – Present</p>
+        </div>
+        <div class="experience-item">
+            <h3>Teaching Assistant - Object-Oriented Programming in C++</h3>
+            <p><b>Institution:</b> FAST NUCES Main Campus, Karachi</p>
+            <p><b>Duration:</b> August 2025 – December 2025</p>
+        </div>
+        <div class="experience-item">
+            <h3>Project Leader in All Semester Projects</h3>
+            <p><b>Organization:</b> FAST NUCES Main Campus, Karachi</p>
+            <p><b>Duration:</b> Present</p>
+        </div>
+    </div>
+
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        
+        <div class="project-item">
+            <h3>CLI-based Taxi Booking System in C</h3>
+            <div class="project-description">
+                <p><b>Key Features:</b></p>
+                <ul>
+                    <li>Command-line interface for booking rides between various pickup points</li>
+                    <li>Supports multiple vehicle types: bike, car, van</li>
+                    <li>Calculates and displays fare based on vehicle and pickup location</li>
+                    <li>Simple logic using loops and conditionals without external libraries</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3>Al Hujjaj Airlines Website (HTML/CSS/JS)</h3>
+            <div class="project-description">
+                <p><b>Key Features:</b></p>
+                <ul>
+                    <li>Front-end static website designed for airline ticket bookings</li>
+                    <li>Built using HTML5, CSS3, and JavaScript without backend</li>
+                    <li>Includes booking forms, flight options, and contact sections</li>
+                    <li>Mobile-responsive layout with modern visual styling</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3>Agricultural Land Renting System in C++ (Raylib GUI)</h3>
+            <div class="project-description">
+                <p><b>Key Features:</b></p>
+                <ul>
+                    <li>OOP-based system with classes: User, Land, Rental, Ratings</li>
+                    <li>Users can list land, rent it, and rate owners or lands</li>
+                    <li>Admin dashboard for booking management and data control</li>
+                    <li>Persistent file handling; Raylib used for simple GUI interface</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
